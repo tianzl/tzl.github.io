@@ -17,7 +17,7 @@ class CustomView : View {
     var mPath: Path? = null
     var moveDx = 0
 
-    val andWidth = 200f
+    val andWidth =  201f
 
 
     constructor(context: Context) : super(context) {
