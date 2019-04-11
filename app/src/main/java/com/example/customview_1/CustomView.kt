@@ -26,6 +26,7 @@ class CustomView : View {
 
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs) {
         System.out.print("123")
+        System.out.print("123")
         mPaint = Paint()
         mPaint?.color = Color.RED
         mPaint?.strokeWidth = 10f
