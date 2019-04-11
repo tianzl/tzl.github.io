@@ -8,6 +8,7 @@ import android.util.Log
 import android.view.MotionEvent
 import android.view.View
 import android.view.animation.LinearInterpolator
+import com.example.alertdialog.DialogUtils
 
 /**
  * Created by TianZuLin on 2019/4/3.
@@ -16,15 +17,15 @@ class CustomView : View {
     var mPaint: Paint? = null
     var mPath: Path? = null
     var moveDx = 0
-
     val andWidth =  201f
-
+    val d : DialogUtils? = null
 
     constructor(context: Context) : super(context) {
         CustomEditText(context, null)
     }
 
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs) {
+        System.out.print("123")
         mPaint = Paint()
         mPaint?.color = Color.RED
         mPaint?.strokeWidth = 10f
@@ -33,6 +34,7 @@ class CustomView : View {
         mPaint?.setShadowLayer(10f, 15f, 15f, Color.GREEN) // 阴影
 
         mPath = Path()
+
     }
 
     override fun onDraw(canvas: Canvas) {
